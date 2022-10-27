@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eloim - Menu Digital</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Barra de Navegacion -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Eloim - Menu Digital</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                <a class="nav-link" href="pl-carta.html">Carta</a>
+                <a class="nav-link" href="bebidas.html">Bebidas</a>
+                <a class="nav-link" href="prom.html">Promociones
+                    <span class="badge text-bg-success rounded-pill">3</span>
+                </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Alerta del menu del dia -->
+    <div class="container mt-2 text-center">
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>Hola! </strong> Disfruta de nuestro Menú del Dia! 
+             <!-- link trigger modal -->
+            <a href="#" class="alert-link" data-bs-toggle="modal" data-bs-target="#exampleModal">Haz click Aqui</a>.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content text-center">
+                <div class="modal-header text-bg-success">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Menu del Dia</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                        
+                        <div class="card mx-3">
+                            <img src="img/menu_dia/menu-dia1.png" alt="" class="rounded">
+                        </div>
+                    
+                    <!--
+                        <h3>Entrada</h3>
+                    <p class="lead"> Menestrón </p>
+                    <h3>Plato Fuerte</h3>
+                    <p class="lead"> Arroz con Lentejas y Milanesa de Pollo </p>
+                    <h3>Bebida</h3>
+                    <p class="lead"> Chicha Morada </p>
+                    -->
+                    
+                    
+                </div>
+                <div class="modal-footer">
+                    <h3 class="lead">Precio: <span class="fw-bold"> $12.00 </span></h3>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Contenido -->
+    <div class="px-4 py-5 text-center">
+        <img class="img-fluid my-4" src="img/logo.png" alt="" width="220" height="150">
+        <h1 class="display-5 fw-bold">Centered hero</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus non incidunt odit architecto tempore alias similique mollitia dolorem impedit ullam. Accusantium iusto ex impedit, at aperiam exercitationem ullam commodi harum!</p>
+          <div class="col-md-12 col-sm-12 my-2 justify-content-sm-center">
+            <a class="btn" href="#" role="button">
+                <img src="img/social/instagram.png" alt="" class="img-fluid" width="40" height="10">
+            </a>
+            <a class="btn" href="#" role="button">
+                <img src="img/social/whatsapp.png" alt="" class="img-fluid" width="40" height="10">
+            </a>
+            <a class="btn" href="#" role="button">
+                <img src="img/social/facebook.png" alt="" class="img-fluid" width="40" height="10">
+            </a>
+            <a class="btn" href="#" role="button">
+                <img src="img/social/rappi.png" alt="" class="img-fluid" width="40" height="10">
+            </a>
+            
+            <!-- 
+                <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+            -->
+            
+          </div>
+        </div>
+
+        <p class="fs-5 fw-bold my-3 lead">Urbanización San Felipe XX</p>
+    </div>
+
+
+    <!-- Footer -->
+
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <p class="col-md-4 mb-0 text-muted">&copy; 2022</p>
+      
+          <a href="index.html" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+            <img class="img-fluid" width="40" height="32" alt="logo.png" src="img/logo.png"></img>
+          </a>
+      
+          <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link px-2 text-muted">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a href="pl-carta.html" class="nav-link px-2 text-muted">Carta</a>
+            </li>
+            <li class="nav-item">
+                <a href="bebidas.html" class="nav-link px-2 text-muted">Bebidas</a>
+            </li>
+            <li class="nav-item">
+                <a href="prom.html" class="nav-link px-2 text-muted">Promociones</a>
+            </li>
+          </ul>
+        </footer>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

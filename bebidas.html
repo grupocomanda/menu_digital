@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Barra de Navegacion -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Eloim - Menu Digital</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                <a class="nav-link" href="pl-carta.html">Carta</a>
+                <a class="nav-link active" href="bebidas.html">Bebidas</a>
+                <a class="nav-link" href="prom.html">Promociones
+                    <span class="badge text-bg-success rounded-pill">3</span>
+                </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Alerta del bebidas -->
+    
+    
+
+    <!-- Contenido -->
+    <div class="px-4 py-2 text-center">
+        <img class="img-fluid my-4" src="img/logo.png" alt="" width="220" height="150">
+        <h1 class="display-5 fw-bold">Nuestras Bebidas</h1>
+        <hr>
+    </div>
+    <div class="container my-2">
+        <div class="row">
+            <!-- bebida 1 -->
+            <div class="col-md-4 col-sm-4 mb-2">
+                <div class="card">
+                    <img src="img/bebidas/cocacola.png" class="img-thumbnail" alt="..." >
+                    <div class="card-body text-center">
+                        <h5 class="card-title mb-3 fs-4 fw-bold">Coca Cola 1L - 1/2L</h5>
+                        <p class="card-text fs-6 lead fw-bold">$ 12.00 </p>
+                        <!-- Button trigger modal -->
+                        <a type="button" class="btn btn-success" data-bs-toggle="modal" id="list-menu" data-bs-target="#exampleModal1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                                <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                            </svg>
+                        </a>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Coca Cola 1L - 1/2L</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="img/bebidas/cocacola.png" width="220" height="150"" class="img-thumbnail" alt="..." style="border:none;">
+                                        <h1 class="modal-title fs-5 fw-bold my-3">$ 12.00</h1>
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus esse temporibus ut neque dolorum quod labore impedit harum laudantium iste amet alias dolore, ullam eaque dolor aut unde hic nam.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- bebida 2-->
+            <div class="col-md-4 col-sm-4  mb-2">
+                <div class="card">
+                    <img src="img/bebidas/wisky_jackdaniels.png" class="img-thumbnail card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mb-3 fs-4 fw-bold">Wisky Jack Daniels</h5>
+                        <p class="card-text fs-6 fw-bold">$ 12.00 </p>
+                        <!-- Button trigger modal -->
+                        <a type="button" class="btn btn-success" data-bs-toggle="modal" id="list-menu" data-bs-target="#exampleModal2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                                <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                            </svg>
+                        </a>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Wisky Jack Daniels</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="img/bebidas/wisky_jackdaniels.png" class="img-thumbnail" alt="..." style="border:none;" width="220" height="150">
+                                        <h1 class="modal-title fs-5 fw-bold my-3">$ 12.00</h1>
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus esse temporibus ut neque dolorum quod labore impedit harum laudantium iste amet alias dolore, ullam eaque dolor aut unde hic nam.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- bebida 3 -->
+            <div class="col-md-4 col-sm-4  mb-2">
+                <div class="card">
+                    <img src="img/bebidas/bebidas3.png" class="img-thumbnail card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mb-3 fs-4 fw-bold">JIM BEAM</h5>
+                        <p class="card-text fs-6 fw-bold">$ 14.00 </p>
+                        <!-- Button trigger modal -->
+                        <a type="button" class="btn btn-success" data-bs-toggle="modal" id="list-menu" data-bs-target="#exampleModal3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                                <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                            </svg>
+                        </a>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">JIM BEAM</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="img/bebidas/bebidas3.png" class="img-thumbnail" alt="..." style="border:none;"  width="220" height="150">
+                                        <h1 class="modal-title fs-5 fw-bold my-3">$ 14.00</h1>
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus esse temporibus ut neque dolorum quod labore impedit harum laudantium iste amet alias dolore, ullam eaque dolor aut unde hic nam.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- bebida 4 -->
+            <div class="col-md-4 col-sm-4  mb-2">
+                <div class="card">
+                    <img src="img/bebidas/bebida4.png" class="img-thumbnail card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mb-3 fs-4 fw-bold">Vino Paros</h5>
+                        <p class="card-text fs-6 fw-bold">$ 14.00 </p>
+                        <!-- Button trigger modal -->
+                        <a type="button" class="btn btn-success" data-bs-toggle="modal" id="list-menu" data-bs-target="#exampleModal4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                                <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                            </svg>
+                        </a>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Vino Paros</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="img/bebidas/bebida4.png" class="img-thumbnail" alt="..." style="border:none;"  width="220" height="150">
+                                        <h1 class="modal-title fs-5 fw-bold my-3">$ 14.00</h1>
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus esse temporibus ut neque dolorum quod labore impedit harum laudantium iste amet alias dolore, ullam eaque dolor aut unde hic nam.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <!-- bebida 5 -->
+            <div class="col-md-4 col-sm-4  mb-2">
+                <div class="card">
+                    <img src="img/bebidas/bebidas5.png" class="img-thumbnail card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mb-3 fs-4 fw-bold">Jaggermesiter</h5>
+                        <p class="card-text fs-6 fw-bold">$ 15.00 </p>
+                        <!-- Button trigger modal -->
+                        <a type="button" class="btn btn-success" data-bs-toggle="modal" id="list-menu" data-bs-target="#exampleModal5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                                <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                            </svg>
+                        </a>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Jaggermesiter</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="img/bebidas/bebidas5.png" class="img-thumbnail" alt="..." style="border:none;"  width="220" height="150">
+                                        <h1 class="modal-title fs-5 fw-bold my-3">$ 15.00</h1>
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus esse temporibus ut neque dolorum quod labore impedit harum laudantium iste amet alias dolore, ullam eaque dolor aut unde hic nam.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+    <!-- Footer -->
+
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <p class="col-md-4 mb-0 text-muted">&copy; 2022</p>
+      
+          <a href="index.html" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+            <img class="img-fluid" width="40" height="32" alt="logo.png" src="img/logo.png"></img>
+          </a>
+      
+          <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link px-2 text-muted">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a href="pl-carta.html" class="nav-link px-2 text-muted">Carta</a>
+            </li>
+            <li class="nav-item">
+                <a href="bebidas.html" class="nav-link px-2 text-muted">Bebidas</a>
+            </li>
+            <li class="nav-item">
+                <a href="prom.html" class="nav-link px-2 text-muted">Promociones</a>
+            </li>
+          </ul>
+        </footer>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

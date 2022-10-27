@@ -1,0 +1,9 @@
+img modal --> width="220" height="150"
+carta - img 610px x 610px png profundidad en bits 8 
+
+promo - 610 x 610 realizado en canvas 
+
+
+menu del dia index con imagen
+menu del dia carta sin imagen
+

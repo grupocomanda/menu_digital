@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Barra de Navegacion -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Eloim - Menu Digital</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                <a class="nav-link active" href="pl-carta.html">Carta</a>
+                <a class="nav-link" href="bebidas.html">Bebidas</a>
+                <a class="nav-link" href="prom.html">Promociones
+                    <span class="badge text-bg-success rounded-pill">3</span>
+                </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Alerta del menu del dia -->
+    <div class="container mt-4">
+        <div class="alert alert-success alert-dismissible fade show text-center" role="alert">
+            <strong>Hola! </strong> Disfruta de nuestro Menú del Dia! 
+             <!-- link trigger modal -->
+            <a href="#" class="alert-link" data-bs-toggle="modal" data-bs-target="#exampleModal">Haz click Aqui</a>.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content text-center">
+                <div class="modal-header text-bg-success">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Menu del Dia</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h3>Entrada</h3>
+                    <p class="lead"> Menestrón </p>
+                    <h3>Plato Fuerte</h3>
+                    <p class="lead"> Arroz con Lentejas y Milanesa de Pollo </p>
+                    <h3>Bebida</h3>
+                    <p class="lead"> Chicha Morada </p>
+                    
+                </div>
+                <div class="modal-footer">
+                    <h3 class="lead">Precio: <span class="fw-bold"> $12.00 </span></h3>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Contenido -->
+    <div class="px-4 py-2 text-center">
+        <img class="img-fluid my-4" src="img/logo.png" alt="" width="220" height="150">
+        <h1 class="display-5 fw-bold">Platos a la Carta</h1>
+        <div class="col-md-12 col-sm-12 my-2 justify-content-sm-center">
+            <a href="#menu_entradas" class="btn btn-success fs-5 mb-2">Entradas</a>
+            <a href="#menu_pl-frios" class="btn btn-success fs-5 mb-2">Platos Frios</a>
+            <a href="#menu_pl-calientes" class="btn btn-success fs-5 mb-2">Platos Calientes</a>
+        </div>
+        
+        
+        <hr>
+    </div>
+    <div class="container my-2">
+        <!-- Menu Entradas -->
+        <h1 class="mb-4 text-center display-4" id="menu_entradas">Entradas</h1>
+            <div class="row" >
+                <!-- menu 1 -->
+                <div class="col-md-4 col-sm-4 mb-2">
+                    <div class="card">
+                        <!-- img-fluid o img-thumbail -->
+                        <img src="img/carta/menu-item-1.png" class="img-fluid card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-3 fs-4 fw-bold">Veggie Tomati mix</h5>
+                            <h3 class="lead card-text">Precio: <span class="fw-bold"> $11.00 </span></h3>
+                            <!-- Button trigger modal -->
+                            <a type="button" class="btn btn-success" data-bs-toggle="modal" id="list-menu" data-bs-target="#exampleModal1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                                </svg>
+                            </a>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header text-bg-success">
+                                            <h1 class="modal-title fs-5"  id="exampleModalLabel">Veggie Tomati mix</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/carta/menu-item-1.png" class="img-thumbnail" alt="..." style="border:none;" width="220" height="150">
+                                            <h3 class="lead card-text my-4">Precio: <span class="fw-bold"> $11.00 </span></h3>
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus esse temporibus ut neque dolorum quod labore impedit harum laudantium iste amet alias dolore, ullam eaque dolor aut unde hic nam.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- menu 2-->
+                <div class="col-md-4 col-sm-4  mb-2">
+                    <div class="card">
+                        <img src="img/carta/menu-item-2.png" class="img-thumbnail card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-3 fs-4 fw-bold">Veggie Tomati mix</h5>
+                            <h3 class="lead card-text">Precio: <span class="fw-bold"> $12.00 </span></h3>
+                            <!-- Button trigger modal -->
+                            <a type="button" class="btn btn-success" data-bs-toggle="modal" id="list-menu" data-bs-target="#exampleModal2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                                </svg>
+                            </a>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header text-bg-success">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Veggie Tomati mix</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/carta/menu-item-2.png" class="img-thumbnail" alt="..." style="border:none;" width="220" height="150">
+                                            <h3 class="lead card-text my-4">Precio: <span class="fw-bold"> $12.00 </span></h3>
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus esse temporibus ut neque dolorum quod labore impedit harum laudantium iste amet alias dolore, ullam eaque dolor aut unde hic nam.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- menu 3 -->
+                <div class="col-md-4 col-sm-4  mb-2">
+                    <div class="card">
+                        <img src="img/carta/menu-item-3.png" class="img-thumbnail card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-3 fs-4 fw-bold">Veggie Tomati mix</h5>
+                            <h3 class="lead card-text">Precio: <span class="fw-bold"> $13.00 </span></h3>
+                            <!-- Button trigger modal -->
+                            <a type="button" class="btn btn-success" data-bs-toggle="modal" id="list-menu" data-bs-target="#exampleModal3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                                </svg>
+                            </a>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header text-bg-success">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Veggie Tomati mix</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/carta/menu-item-3.png" class="img-thumbnail" alt="..." style="border:none;" width="220" height="150">
+                                            <h3 class="lead card-text my-4">Precio: <span class="fw-bold"> $13.00 </span></h3>
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus esse temporibus ut neque dolorum quod labore impedit harum laudantium iste amet alias dolore, ullam eaque dolor aut unde hic nam.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- menu 4 -->
+                <div class="col-md-4 col-sm-4  mb-2">
+                    <div class="card">
+                        <img src="img/carta/menu-item-4.png" class="img-thumbnail card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-3 fs-4 fw-bold">Veggie Tomati mix</h5>
+                            <h3 class="lead card-text">Precio: <span class="fw-bold"> $14.00 </span></h3>
+                            <!-- Button trigger modal -->
+                            <a type="button" class="btn btn-success" data-bs-toggle="modal" id="list-menu" data-bs-target="#exampleModal4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                                </svg>
+                            </a>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header text-bg-success">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Veggie Tomati mix</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/carta/menu-item-4.png" class="img-thumbnail" alt="..." style="border:none;" width="220" height="150">
+                                            <h3 class="lead card-text my-4">Precio: <span class="fw-bold"> $14.00 </span></h3>
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus esse temporibus ut neque dolorum quod labore impedit harum laudantium iste amet alias dolore, ullam eaque dolor aut unde hic nam.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- menu 5 -->
+                <div class="col-md-4 col-sm-4  mb-2">
+                    <div class="card">
+                        <img src="img/carta/menu-item-5.png" class="img-thumbnail card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-3 fs-4 fw-bold">Veggie Tomati mix</h5>
+                            <h3 class="lead card-text">Precio: <span class="fw-bold"> $15.00 </span></h3>
+                            <!-- Button trigger modal -->
+                            <a type="button" class="btn btn-success" data-bs-toggle="modal" id="list-menu" data-bs-target="#exampleModal5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                                </svg>
+                            </a>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header text-bg-success">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Veggie Tomati mix</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/carta/menu-item-5.png" class="img-thumbnail" alt="..." style="border:none;" width="220" height="150">
+                                            <h3 class="lead card-text my-4">Precio: <span class="fw-bold"> $15.00 </span></h3>
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus esse temporibus ut neque dolorum quod labore impedit harum laudantium iste amet alias dolore, ullam eaque dolor aut unde hic nam.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <hr>
+
+        <!-- Menu Platos Frios -->
+        <h1 class="mb-4 text-center display-4" id="menu_pl-frios">Platos Frios</h1>
+            <div class="row">
+
+                <!-- menu 1 -->
+                <div class="col-md-3 col-sm-4 mb-2">
+                    <div class="card">
+                        <!-- img-fluid o img-thumbail -->
+                        <img src="img/carta/menu-item-1.png" class="img-fluid card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-3 fs-4 fw-bold">Veggie Tomati mix</h5>
+                            <h3 class="lead card-text">Precio: <span class="fw-bold"> $11.00 </span></h3>
+                            <!-- Button trigger modal -->
+                            <a type="button" class="btn btn-success" data-bs-toggle="modal" id="list-menu" data-bs-target="#exampleModal_PF1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                                </svg>
+                            </a>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal_PF1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header text-bg-success">
+                                            <h1 class="modal-title fs-5"  id="exampleModalLabel">Veggie Tomati mix</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/carta/menu-item-1.png" class="img-thumbnail" alt="..." style="border:none;" width="220" height="150">
+                                            <h3 class="lead card-text my-4">Precio: <span class="fw-bold"> $11.00 </span></h3>
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus esse temporibus ut neque dolorum quod labore impedit harum laudantium iste amet alias dolore, ullam eaque dolor aut unde hic nam.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- menu 2-->
+                <div class="col-md-3 col-sm-4  mb-2">
+                    <div class="card">
+                        <img src="img/carta/menu-item-2.png" class="img-thumbnail card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-3 fs-4 fw-bold">Veggie Tomati mix</h5>
+                            <h3 class="lead card-text">Precio: <span class="fw-bold"> $12.00 </span></h3>
+                            <!-- Button trigger modal -->
+                            <a type="button" class="btn btn-success" data-bs-toggle="modal" id="list-menu" data-bs-target="#exampleModal_PF2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                                </svg>
+                            </a>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal_PF2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header text-bg-success">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Veggie Tomati mix</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/carta/menu-item-2.png" class="img-thumbnail" alt="..." style="border:none;" width="220" height="150">
+                                            <h3 class="lead card-text my-4">Precio: <span class="fw-bold"> $12.00 </span></h3>
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus esse temporibus ut neque dolorum quod labore impedit harum laudantium iste amet alias dolore, ullam eaque dolor aut unde hic nam.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- menu 3 -->
+                <div class="col-md-3 col-sm-4  mb-2">
+                    <div class="card">
+                        <img src="img/carta/menu-item-3.png" class="img-thumbnail card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-3 fs-4 fw-bold">Veggie Tomati mix</h5>
+                            <h3 class="lead card-text">Precio: <span class="fw-bold"> $13.00 </span></h3>
+                            <!-- Button trigger modal -->
+                            <a type="button" class="btn btn-success" data-bs-toggle="modal" id="list-menu" data-bs-target="#exampleModal_PF3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                                </svg>
+                            </a>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal_PF3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header text-bg-success">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Veggie Tomati mix</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/carta/menu-item-3.png" class="img-thumbnail" alt="..." style="border:none;" width="220" height="150">
+                                            <h3 class="lead card-text my-4">Precio: <span class="fw-bold"> $13.00 </span></h3>
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus esse temporibus ut neque dolorum quod labore impedit harum laudantium iste amet alias dolore, ullam eaque dolor aut unde hic nam.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- menu 4 -->
+                <div class="col-md-3 col-sm-4  mb-2">
+                    <div class="card">
+                        <img src="img/carta/menu-item-4.png" class="img-thumbnail card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-3 fs-4 fw-bold">Veggie Tomati mix</h5>
+                            <h3 class="lead card-text">Precio: <span class="fw-bold"> $14.00 </span></h3>
+                            <!-- Button trigger modal -->
+                            <a type="button" class="btn btn-success" data-bs-toggle="modal" id="list-menu" data-bs-target="#exampleModal_PF4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                                </svg>
+                            </a>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal_PF4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header text-bg-success">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Veggie Tomati mix</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/carta/menu-item-4.png" class="img-thumbnail" alt="..." style="border:none;" width="220" height="150">
+                                            <h3 class="lead card-text my-4">Precio: <span class="fw-bold"> $14.00 </span></h3>
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus esse temporibus ut neque dolorum quod labore impedit harum laudantium iste amet alias dolore, ullam eaque dolor aut unde hic nam.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- menu 5 -->
+                <div class="col-md-3 col-sm-4  mb-2">
+                    <div class="card">
+                        <img src="img/carta/menu-item-5.png" class="img-thumbnail card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-3 fs-4 fw-bold">Veggie Tomati mix</h5>
+                            <h3 class="lead card-text">Precio: <span class="fw-bold"> $15.00 </span></h3>
+                            <!-- Button trigger modal -->
+                            <a type="button" class="btn btn-success" data-bs-toggle="modal" id="list-menu" data-bs-target="#exampleModal_PF5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                                </svg>
+                            </a>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal_PF5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header text-bg-success">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Veggie Tomati mix</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/carta/menu-item-5.png" class="img-thumbnail" alt="..." style="border:none;" width="220" height="150">
+                                            <h3 class="lead card-text my-4">Precio: <span class="fw-bold"> $15.00 </span></h3>
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus esse temporibus ut neque dolorum quod labore impedit harum laudantium iste amet alias dolore, ullam eaque dolor aut unde hic nam.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- menu 6 -->
+                <div class="col-md-3 col-sm-4  mb-2">
+                    <div class="card">
+                        <img src="img/carta/menu-item-6.png" class="img-thumbnail card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-3 fs-4 fw-bold">Veggie Tomati mix</h5>
+                            <h3 class="lead card-text">Precio: <span class="fw-bold"> $16.00 </span></h3>
+                            <!-- Button trigger modal -->
+                            <a type="button" class="btn btn-success" data-bs-toggle="modal" id="list-menu" data-bs-target="#exampleModal_PF6">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                                </svg>
+                            </a>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal_PF6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header text-bg-success">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Veggie Tomati mix</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/carta/menu-item-6.png" class="img-thumbnail" alt="..." style="border:none;" width="220" height="150">
+                                            <h3 class="lead card-text my-4">Precio: <span class="fw-bold"> $16.00 </span></h3>
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus esse temporibus ut neque dolorum quod labore impedit harum laudantium iste amet alias dolore, ullam eaque dolor aut unde hic nam.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- menu 7 -->
+                <div class="col-md-3 col-sm-4  mb-2">
+                    <div class="card">
+                        <img src="img/carta/menu-item-6.png" class="img-thumbnail card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-3 fs-4 fw-bold">Veggie Tomati mix</h5>
+                            <h3 class="lead card-text">Precio: <span class="fw-bold"> $17.00 </span></h3>
+                            <!-- Button trigger modal -->
+                            <a type="button" class="btn btn-success" data-bs-toggle="modal" id="list-menu" data-bs-target="#exampleModal_PF7">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                                </svg>
+                            </a>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal_PF7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header text-bg-success">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Veggie Tomati mix</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/carta/menu-item-6.png" class="img-thumbnail" alt="..." style="border:none;" width="220" height="150">
+                                            <h3 class="lead card-text my-4">Precio: <span class="fw-bold"> $17.00 </span></h3>
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus esse temporibus ut neque dolorum quod labore impedit harum laudantium iste amet alias dolore, ullam eaque dolor aut unde hic nam.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- menu 8 -->
+                <div class="col-md-3 col-sm-4  mb-2">
+                    <div class="card">
+                        <img src="img/carta/menu-item-6.png" class="img-thumbnail card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-3 fs-4 fw-bold">Veggie Tomati mix</h5>
+                            <h3 class="lead card-text">Precio: <span class="fw-bold"> $18.00 </span></h3>
+                            <!-- Button trigger modal -->
+                            <a type="button" class="btn btn-success" data-bs-toggle="modal" id="list-menu" data-bs-target="#exampleModal_PF8">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                                </svg>
+                            </a>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal_PF8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header text-bg-success">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Veggie Tomati mix</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/carta/menu-item-6.png" class="img-thumbnail" alt="..." style="border:none;" width="220" height="150">
+                                            <h3 class="lead card-text my-4">Precio: <span class="fw-bold"> $18.00 </span></h3>
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus esse temporibus ut neque dolorum quod labore impedit harum laudantium iste amet alias dolore, ullam eaque dolor aut unde hic nam.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- menu 9 -->
+                <div class="col-md-3 col-sm-4  mb-2">
+                    <div class="card">
+                        <img src="img/carta/menu-item-6.png" class="img-thumbnail card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-3 fs-4 fw-bold">Veggie Tomati mix</h5>
+                            <h3 class="lead card-text">Precio: <span class="fw-bold"> $19.00 </span></h3>
+                            <!-- Button trigger modal -->
+                            <a type="button" class="btn btn-success" data-bs-toggle="modal" id="list-menu" data-bs-target="#exampleModal_PF9">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                                </svg>
+                            </a>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal_PF9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header text-bg-success">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Veggie Tomati mix</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/carta/menu-item-6.png" class="img-thumbnail" alt="..." style="border:none;" width="220" height="150">
+                                            <h3 class="lead card-text my-4">Precio: <span class="fw-bold"> $19.00 </span></h3>
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus esse temporibus ut neque dolorum quod labore impedit harum laudantium iste amet alias dolore, ullam eaque dolor aut unde hic nam.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- menu 10 -->
+                <div class="col-md-3 col-sm-4  mb-2">
+                    <div class="card">
+                        <img src="img/carta/menu-item-6.png" class="img-thumbnail card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-3 fs-4 fw-bold">Veggie Tomati mix</h5>
+                            <h3 class="lead card-text">Precio: <span class="fw-bold"> $100.00 </span></h3>
+                            <!-- Button trigger modal -->
+                            <a type="button" class="btn btn-success" data-bs-toggle="modal" id="list-menu" data-bs-target="#exampleModal_PF10">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                                </svg>
+                            </a>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal_PF10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header text-bg-success">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Veggie Tomati mix</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/carta/menu-item-6.png" class="img-thumbnail" alt="..." style="border:none;" width="220" height="150">
+                                            <h3 class="lead card-text my-4">Precio: <span class="fw-bold"> $100.00 </span></h3>
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus esse temporibus ut neque dolorum quod labore impedit harum laudantium iste amet alias dolore, ullam eaque dolor aut unde hic nam.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+        <!-- Menu Platos Calientes -->
+        <h1 class="mb-4 text-center display-4" id="menu_pl-calientes">Platos Calientes</h1>
+            <div class="row">
+                <!-- menu 1 -->
+                <div class="col-md-4 col-sm-4 mb-2">
+                    <div class="card">
+                        <!-- img-fluid o img-thumbail -->
+                        <img src="img/carta/menu-item-1.png" class="img-fluid card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-3 fs-4 fw-bold">Veggie Tomati mix</h5>
+                            <h3 class="lead card-text">Precio: <span class="fw-bold"> $11.00 </span></h3>
+                            <!-- Button trigger modal -->
+                            <a type="button" class="btn btn-success" data-bs-toggle="modal" id="list-menu" data-bs-target="#exampleModal_PC1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                                </svg>
+                            </a>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal_PC1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header text-bg-success">
+                                            <h1 class="modal-title fs-5"  id="exampleModalLabel">Veggie Tomati mix</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/carta/menu-item-1.png" class="img-thumbnail" alt="..." style="border:none;" width="220" height="150">
+                                            <h3 class="lead card-text my-4">Precio: <span class="fw-bold"> $11.00 </span></h3>
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus esse temporibus ut neque dolorum quod labore impedit harum laudantium iste amet alias dolore, ullam eaque dolor aut unde hic nam.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- menu 2-->
+                <div class="col-md-4 col-sm-4  mb-2">
+                    <div class="card">
+                        <img src="img/carta/menu-item-2.png" class="img-thumbnail card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-3 fs-4 fw-bold">Veggie Tomati mix</h5>
+                            <h3 class="lead card-text">Precio: <span class="fw-bold"> $12.00 </span></h3>
+                            <!-- Button trigger modal -->
+                            <a type="button" class="btn btn-success" data-bs-toggle="modal" id="list-menu" data-bs-target="#exampleModal_PC2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                                </svg>
+                            </a>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal_PC2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header text-bg-success">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Veggie Tomati mix</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/carta/menu-item-2.png" class="img-thumbnail" alt="..." style="border:none;" width="220" height="150">
+                                            <h3 class="lead card-text my-4">Precio: <span class="fw-bold"> $12.00 </span></h3>
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus esse temporibus ut neque dolorum quod labore impedit harum laudantium iste amet alias dolore, ullam eaque dolor aut unde hic nam.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- menu 3 -->
+                <div class="col-md-4 col-sm-4  mb-2">
+                    <div class="card">
+                        <img src="img/carta/menu-item-3.png" class="img-thumbnail card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-3 fs-4 fw-bold">Veggie Tomati mix</h5>
+                            <h3 class="lead card-text">Precio: <span class="fw-bold"> $13.00 </span></h3>
+                            <!-- Button trigger modal -->
+                            <a type="button" class="btn btn-success" data-bs-toggle="modal" id="list-menu" data-bs-target="#exampleModal_PC3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                                </svg>
+                            </a>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal_PC3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header text-bg-success">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Veggie Tomati mix</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/carta/menu-item-3.png" class="img-thumbnail" alt="..." style="border:none;" width="220" height="150">
+                                            <h3 class="lead card-text my-4">Precio: <span class="fw-bold"> $13.00 </span></h3>
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus esse temporibus ut neque dolorum quod labore impedit harum laudantium iste amet alias dolore, ullam eaque dolor aut unde hic nam.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- menu 4 -->
+                <div class="col-md-4 col-sm-4  mb-2">
+                    <div class="card">
+                        <img src="img/carta/menu-item-4.png" class="img-thumbnail card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-3 fs-4 fw-bold">Veggie Tomati mix</h5>
+                            <h3 class="lead card-text">Precio: <span class="fw-bold"> $14.00 </span></h3>
+                            <!-- Button trigger modal -->
+                            <a type="button" class="btn btn-success" data-bs-toggle="modal" id="list-menu" data-bs-target="#exampleModal_PC4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                                </svg>
+                            </a>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal_PC4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header text-bg-success">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Veggie Tomati mix</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/carta/menu-item-4.png" class="img-thumbnail" alt="..." style="border:none;" width="220" height="150">
+                                            <h3 class="lead card-text my-4">Precio: <span class="fw-bold"> $14.00 </span></h3>
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus esse temporibus ut neque dolorum quod labore impedit harum laudantium iste amet alias dolore, ullam eaque dolor aut unde hic nam.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- menu 5 -->
+                <div class="col-md-4 col-sm-4  mb-2">
+                    <div class="card">
+                        <img src="img/carta/menu-item-5.png" class="img-thumbnail card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-3 fs-4 fw-bold">Veggie Tomati mix</h5>
+                            <h3 class="lead card-text">Precio: <span class="fw-bold"> $15.00 </span></h3>
+                            <!-- Button trigger modal -->
+                            <a type="button" class="btn btn-success" data-bs-toggle="modal" id="list-menu" data-bs-target="#exampleModal_PC5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                                </svg>
+                            </a>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal_PC5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header text-bg-success">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Veggie Tomati mix</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/carta/menu-item-5.png" class="img-thumbnail" alt="..." style="border:none;" width="220" height="150">
+                                            <h3 class="lead card-text my-4">Precio: <span class="fw-bold"> $15.00 </span></h3>
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus esse temporibus ut neque dolorum quod labore impedit harum laudantium iste amet alias dolore, ullam eaque dolor aut unde hic nam.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- menu 6 -->
+                <div class="col-md-4 col-sm-4  mb-2">
+                    <div class="card">
+                        <img src="img/carta/menu-item-6.png" class="img-thumbnail card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-3 fs-4 fw-bold">Veggie Tomati mix</h5>
+                            <h3 class="lead card-text">Precio: <span class="fw-bold"> $16.00 </span></h3>
+                            <!-- Button trigger modal -->
+                            <a type="button" class="btn btn-success" data-bs-toggle="modal" id="list-menu" data-bs-target="#exampleModal_PC6">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                                </svg>
+                            </a>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal_PC6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header text-bg-success">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Veggie Tomati mix</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/carta/menu-item-6.png" class="img-thumbnail" alt="..." style="border:none;" width="220" height="150">
+                                            <h3 class="lead card-text my-4">Precio: <span class="fw-bold"> $16.00 </span></h3>
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus esse temporibus ut neque dolorum quod labore impedit harum laudantium iste amet alias dolore, ullam eaque dolor aut unde hic nam.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+
+
+    <!-- Footer -->
+
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <p class="col-md-4 mb-0 text-muted">&copy; 2022</p>
+      
+          <a href="index.html" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+            <img class="img-fluid" width="40" height="32" alt="logo.png" src="img/logo.png"></img>
+          </a>
+      
+          <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link px-2 text-muted">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a href="pl-carta.html" class="nav-link px-2 text-muted">Carta</a>
+            </li>
+            <li class="nav-item">
+                <a href="bebidas.html" class="nav-link px-2 text-muted">Bebidas</a>
+            </li>
+            <li class="nav-item">
+                <a href="prom.html" class="nav-link px-2 text-muted">Promociones</a>
+            </li>
+          </ul>
+        </footer>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
